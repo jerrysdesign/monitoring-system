@@ -1,11 +1,3 @@
-/*
- * React.js Starter Kit
- * Copyright (c) 2014 Konstantin Tarkus (@koistya), KriaSoft LLC.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import './App.less';
 import React, { PropTypes } from 'react';
 import invariant from 'react/lib/invariant';
@@ -54,25 +46,11 @@ class App {
     return (
       <div className="App">
         <Navbar />
-        {
-          this.props.path === '/' ?
-          <div className="jumbotron">
-            <div className="container text-center">
-              <h1>React</h1>
-              <p>Complex web apps made easy</p>
-            </div>
-          </div> :
-          <div className="container">
-            <h2>{page.title}</h2>
-          </div>
-        }
-        <ContentPage className="container" {...page} />
+        <ContentPage {...page} />
         <div className="navbar-footer">
           <div className="container">
             <p className="text-muted">
-              <span>© Your Company</span>
-              <span><a href="/">Home</a></span>
-              <span><a href="/privacy">Privacy</a></span>
+              <span>© FastWeb</span>
               <span>{'Viewport: ' + this.props.viewport.width + 'x' + this.props.viewport.height}</span>
             </p>
           </div>
