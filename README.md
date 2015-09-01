@@ -1,18 +1,8 @@
-# React / Flux &nbsp;Starter Kit
+# OWL
 
-[![Build Status](http://img.shields.io/travis/kriasoft/react-starter-kit/master.svg?style=flat)](http://travis-ci.org/kriasoft/react-starter-kit)
-[![Dependency Status](https://david-dm.org/kriasoft/react-starter-kit.svg?style=flat)](https://david-dm.org/kriasoft/react-starter-kit)
-[![devDependency Status](https://david-dm.org/kriasoft/react-starter-kit/dev-status.svg?style=flat)](https://david-dm.org/kriasoft/react-starter-kit#info=devDependencies)
-[![Tips](http://img.shields.io/gratipay/koistya.svg?style=flat)](https://gratipay.com/koistya)
-[![Gitter](http://img.shields.io/badge/chat-online-brightgreen.svg?style=flat)](https://gitter.im/kriasoft/react-starter-kit)
+### Source
 
-> This project template is a skeleton for an [isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)
-> web application (SPA) based on Facebook's [React](https://facebook.github.io/react/)
-> library and [Flux](http://facebook.github.io/flux/) architecture. You can use
-> it to quickly bootstrap your web application projects. All the parts of this
-> project template are easily replaceable.
-
-**Demo**: http://reactjs.kriasoft.com
+[Yeoman generator for React.js projects](https://github.com/kriasoft/react-starter-kit/tree/yeoman-generator)
 
 ### Documentation
 
@@ -34,7 +24,7 @@
 │   ├── /core/                  # Core components (Flux dispatcher, base classes, utilities)
 │   ├── /stores/                # Stores contain the application state and logic
 │   ├── /styles/                # CSS styles (deprecated, put CSS into components' folders)
-│   ├── /templates/             # HTML templates for server-side rendering, emails etc.
+│   ├── /views/             # HTML templates for server-side rendering, emails etc.
 │   ├── /app.js                 # Client-side startup script
 │   └── /server.js              # Server-side startup script
 │── gulpfile.js                 # Configuration file for automated builds
@@ -117,10 +107,6 @@ the file is. Name the test by appending `-test.js` to the js file.
  * [Flow - A static type checker for JavaScript](http://flowtype.org/)
  * [The Future of React](https://github.com/reactjs/react-future)
  * [Learn ES6](https://babeljs.io/docs/learn-es6/), [ES6 Features](https://github.com/lukehoban/es6features#readme)
-
-### Support
-
-Have feedback, feature request or need help? Contact me on [codementor.io/koistya](https://www.codementor.io/koistya).
 
 ### Copyright
 
