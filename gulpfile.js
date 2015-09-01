@@ -39,7 +39,7 @@ gulp.task('clean', del.bind(
 // 3rd party libraries
 gulp.task('vendor', function() {
   return gulp.src('node_modules/bootstrap/dist/fonts/**')
-    .pipe(gulp.dest('build/fonts'));
+    .pipe(gulp.dest('build/static/fonts'));
 });
 
 // Static files
@@ -47,7 +47,7 @@ gulp.task('assets', function() {
   src.assets = [
     'src/assets/**',
     'src/content*/**/*.*',
-    'src/templates*/**/*.*'
+    'src/views*/**/*.*'
   ];
   return gulp.src(src.assets)
     .pipe($.changed('build'))
@@ -68,7 +68,7 @@ gulp.task('styles', function() {
     .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe($.csscomb())
     .pipe($.if(RELEASE, $.minifyCss()))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('build/static/css'))
     .pipe($.size({title: 'styles'}));
 });
 
@@ -120,7 +120,7 @@ gulp.task('serve', ['build:watch'], function(cb) {
   src.server = [
     'build/server.js',
     'build/content/**/*',
-    'build/templates/**/*'
+    'build/views/**/*'
   ];
 
   var started = false;

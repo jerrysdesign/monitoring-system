@@ -22,7 +22,7 @@ var GLOBALS = {
 
 var config = {
   output: {
-    path: './build/',
+    path: './build',
     publicPath: './',
     sourcePrefix: '  '
   },
@@ -95,7 +95,7 @@ var config = {
 var appConfig = _.merge({}, config, {
   entry: './src/app.js',
   output: {
-    filename: 'app.js'
+    filename: './static/js/app.js'
   },
   plugins: config.plugins.concat([
       new webpack.DefinePlugin(_.merge(GLOBALS, {'__SERVER__': false}))
