@@ -24,7 +24,7 @@
 │   ├── /core/                  # Core components (Flux dispatcher, base classes, utilities)
 │   ├── /stores/                # Stores contain the application state and logic
 │   ├── /styles/                # CSS styles (deprecated, put CSS into components' folders)
-│   ├── /views/             # HTML templates for server-side rendering, emails etc.
+│   ├── /views/                 # HTML templates for server-side rendering, emails etc.
 │   ├── /app.js                 # Client-side startup script
 │   └── /server.js              # Server-side startup script
 │── gulpfile.js                 # Configuration file for automated builds
@@ -33,13 +33,9 @@
 └── webpack.config.js           # Webpack configuration for bundling and optimization
 ```
 
-### Getting Started
-
-Just [clone](github-windows://openRepo/https://github.com/kriasoft/react-starter-kit) or [fork](https://github.com/kriasoft/react-starter-kit/fork) the repo and start hacking:
-
 ```shell
-$ git clone -o react-starter-kit https://github.com/kriasoft/react-starter-kit.git MyApp
-$ cd MyApp
+$ git clone -o monitoring-system https://github.com/jerrysdesign/monitoring-system.git portal
+$ cd portal
 $ npm install -g gulp           # Install Gulp task runner globally
 $ npm install                   # Install Node.js components listed in ./package.json
 ```
